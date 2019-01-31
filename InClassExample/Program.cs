@@ -6,7 +6,17 @@ namespace InClassExample
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            try
+            {
+                Console.WriteLine("What is your name?");
+                string name = Console.ReadLine();
+                Console.WriteLine("Hello " + name);
+            }
+            catch
+            {
+                Console.WriteLine("Invalid name lol.");
+                Console.ReadKey();
+            }
         }
     }
 }
